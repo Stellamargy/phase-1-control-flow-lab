@@ -1,37 +1,72 @@
-function scuberGreetingForFeet(distance){
-  // Write your code here!
+// function scuberGreetingForFeet(distance){
+//   // Write your code here!
+//   let result;
+//   if(distance<2500){
+//     if (distance<=400){
+//       result= "This one is on me!";
+//     }else if(distance > 400 && distance <2000){
+//       result= "That will be twenty bucks.";
+//     }else if(distance>2000){
+//       result= "I will gladly take your thirty bucks.";
+//     }
+//   }else{
+//     result="No can do."
+//   }
+//   return result;
+// }
+
+// function ternaryCheckCity(city){
+// // Write your code here!
+//   const response= city==="NYC"?"Ok, sounds good.":"No go."
+//   return response;
+// }
+
+// function switchOnCharmFromTip(tip){
+//   // Write your code here!
+//   switch(tip){
+//     case "generous":
+//       return "Thank you so much."
+//       break;
+//     case "not as generous":
+//       return "Thank you."
+//       break;
+//     default:
+//        return "Bye."
+//   }
+// }
+// console.log(switchOnCharmFromTip("yes"))
+
+function scuberGreetingForFeet(distance) {
   let result;
-  if(distance<2500){
-    if (distance<=400){
-      result= "This one is on me!";
-    }else if(distance > 400 && distance <2000){
-      result= "That will be twenty bucks.";
-    }else if(distance>2000){
-      result= "I will gladly take your thirty bucks.";
+  if (distance < 2500) {
+    if (distance <= 400) {
+      result = "This one is on me!";
+    } else if (distance > 400 && distance < 2000) {
+      result = "That will be twenty bucks.";
+    } else if (distance >= 2000) {
+      result = "I will gladly take your thirty bucks.";
     }
-  }else{
-    result="No can do."
+  } else {
+    result = "No can do.";
   }
   return result;
 }
-
-function ternaryCheckCity(city){
-// Write your code here!
-  const response= city==="NYC"?"Ok, sounds good.":"No go."
-  return response;
+function ternaryCheckCity(city) {
+  // // Write your code here!
+  const result = city === "NYC" ? "Ok, sounds good." : "No go.";
+  return result;
 }
 
-function switchOnCharmFromTip(tip){
-  // Write your code here!
-  switch(tip){
+function switchOnCharmFromTip(tip) {
+  //write code
+  switch (tip) {
     case "generous":
-      return "Thank you so much."
+      return "Thank you so much.";
       break;
     case "not as generous":
-      return "Thank you."
+      return "Thank you.";
       break;
     default:
-       return "Bye."
+      return "Bye.";
   }
 }
-console.log(switchOnCharmFromTip("yes"))
